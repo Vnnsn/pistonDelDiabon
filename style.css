@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: white;
+    padding-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    color: #2C3E50;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.princ {
+    display: flex;
+    background-color: #00000052;
+    color: white;
+    width: 100vw;
+    height: 50vh;
+    font-weight: bold;
+}
+
+
+
+.textos .P1 {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 36px;
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.textos {
+    display: flex;
+    gap: 10px;
+    padding: 100px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #020258;
+}
+
+
+.g1 {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+.textos .P2-NAME {
+    padding-top: 10px;
+    font-size: 30px;
+}
+.textos .P3-IP {
+    gap: 10px;
+    background-color: #a39e9e50;
+    font-size: 25px;
+}
+
+.imgs {
+    display: flex;
+}
+
+.PV {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2C3E50;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.PV a {
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+.IP-MINE {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    color: #2C3E50;
+}
+
+.P2 {
+    font-size: 30px;
+}
+
+.IP-MINE .P3-IP {
+    background-color: rgba(128, 128, 128, 0.397);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.P3-IP {
+    color: white;
+}
+
+.P1 {
+    color: #2C3E50;
+}
+
+@media (max-width: 768px) {
+    .navbar ul li a {
+        font-size: 20px;
+        color: black;
+    }
+    .navbar {
+        float: right;
+        flex-direction: column;
+        
+    }
+
+ 
+    .PV {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+     .P1, .P2, .P3-IP {
+       
+        word-break: break-word;
+  }
+
+    .P2 {
+        word-break: normal;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .textos {
+        padding: 20px;
+    }
+
+    .textos .P1 {
+        padding: 24px;
+    }
+
+    .imgs img {
+        max-width: 200%;
+        height: auto;
+        padding-top: 100px;
+    }
+
+}
