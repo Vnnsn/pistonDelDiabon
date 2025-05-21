@@ -36,7 +36,7 @@ body {
     display: flex;
     background-color: #00000052;
     color: white;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     font-weight: bold;
 }
@@ -131,45 +131,73 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center  ;
+    }
+
     .navbar ul li a {
         font-size: 20px;
         color: black;
     }
-    .navbar {
-        float: right;
+
+    .imgs {
         flex-direction: column;
-        
+        align-items: center;
+        text-align: center;
     }
 
- 
+    .imgs img {
+        max-width: 90%;
+        height: auto;
+        padding-top: 50px;
+    }
+
     .PV {
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        font-size: 24px;
+        padding: 10px;
     }
-     .P1, .P2, .P3-IP {
-       
-        word-break: break-word;
-  }
 
-    .P2 {
-        word-break: normal;
-        text-align: center;
+    .princ {
         flex-direction: column;
+        height: auto;
+        padding: 20px;
     }
 
     .textos {
         padding: 20px;
+        gap: 20px;
     }
 
     .textos .P1 {
-        padding: 24px;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
     }
 
-    .imgs img {
-        max-width: 200%;
-        height: auto;
-        padding-top: 100px;
+    .P2 {
+        font-size: 20px;
+        text-align: center;
     }
 
+    .P3-IP {
+        font-size: 16px;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .IP-MINE {
+        flex-direction: column;
+        align-items: center;
+    }
 }
